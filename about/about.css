@@ -279,3 +279,26 @@
 .site-footer__text__link {
     color: #8287a9;
 }
+.about_address{
+    color:#fff;
+}
+.about_map{
+    height:300px;
+}
+
+.portfolio-filter-btn-group  .btn-group button{
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    color: #1DCB8B;
+    background-color: #28292e;
+    padding: 10px 20px;
+    margin:20px;
+}
+.portfolio-filter-btn-group  .btn-group button:hover{
+    padding: 10px 20px;
+    color: #1DCB8B;
+    background-color: #fff;
+}

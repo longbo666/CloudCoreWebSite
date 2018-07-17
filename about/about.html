@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../assets/css/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="../assets/css/elegant_font/style.css"/>
     <link rel="stylesheet" href="../assets/css/animate.css">
-    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
 <!-- PRE LOADER -->
@@ -44,7 +44,7 @@
                         <a class="nav-link" href="../products/products.html">产品</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cases/cases.html">案例</a>
+                        <a class="nav-link" href="../cases/cases.html">案例</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../news/news.html">动态</a>
@@ -60,7 +60,7 @@
 </header>
 <!-- Header End -->
 
-<div id="portfolio" class="bgSection portfolio-section">
+<div id="about_us" class="bgSection portfolio-section">
     <div class="container">
         <div class="">
             <!-- Section Header -->
@@ -84,7 +84,7 @@
     </div>
 
 </div>
-<section id="portfolio" class="bgSection portfolio-section">
+<section id="about_timeline" class="bgSection portfolio-section">
     <div class="container">
         <div class="">
             <!-- Section Header -->
@@ -189,7 +189,8 @@
         </div>
     </div>
 </section>
-<div id="portfolio" class="bgSection portfolio-section">
+
+<section id="portfolio" class=" portfolio-section">
     <div class="container">
         <div class="">
             <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
@@ -199,79 +200,212 @@
         </div>
     </div>
 
-    <div class="portfolio-works wow fadeIn" data-wow-duration="2s">
-
-        <!-- Filter Button Start -->
-        <div id="portfolio-filter" class="portfolio-filter-btn-group">
-            <ul>
-                <li>
-                    <a href="#" class="selected" data-filter="*">ALL</a>
-                    <a href="#" data-filter=".beijing">北京</a>
-                    <a href="#" data-filter=".shenzhen">深圳</a>
-                    <a href="#" data-filter=".wuhan">武汉</a>
-                    <a href="#" data-filter=".ningbo">宁波</a>
-                </li>
-            </ul>
+    <div data-wow-duration="2s">
+        <!--button group-->
+        <div class="portfolio-filter-btn-group ">
+            <div class="btn-group row" data-toggle="buttons-checkbox">
+                <div class="col-xs-3 col-sm-3">
+                    <button class="btn btn-inverse" id="beijing">北京</button>
+                </div>
+                <div class="col-xs-3 col-sm-3">
+                    <button class="btn btn-inverse" id="shenzhen">深圳</button>
+                </div>
+                <div class="col-xs-3 col-sm-3">
+                    <button class="btn btn-inverse" id="wuhan">武汉</button>
+                </div>
+                <div class="col-xs-3 col-sm-3">
+                    <button class="btn btn-inverse" id="ningbo">宁波</button>
+                </div>
+            </div>
         </div>
         <!-- Filter Button End -->
-
-
-    </div>
-</div>
-<!-- Contact Section End -->
-
-<footer>
-    <div url="https://m.amap.com/navi/?dest=116.470098,39.992838&destName=北京研发中心&hideRouteIcon=1&key=484d0efef85f91a8ad03daf0c152bcec"></div>
-    <div class="container">
-        <div class="row footer">
-            <div class="col-md-6 col-ms-6 col-xs-12">
-                <p>CloudCore</p>
-                <p>版权所有 © 北京云核网络技术有限公司 2014-2018 <span>京ICP备14027182号</span></p>
-            </div>
-            <div class="col-md-6 col-ms-6 col-xs-12">
-                <div class="row contact">
-                    <div><i class="fa fa-phone"></i></div>
-                    <div class="active"><i class="fa fa-envelope"></i></div>
-                    <div><i class="fa fa-map-marker"></i></div>
+        <div class="container" id="about_map">
+            <div class="row beijing">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="about_address">北京研发中心（总部）</h2>
+                    <div class="about_address">电话：010-87220477</div>
+                    <div class="about_address">邮箱：csc@cloudcore.cn</div>
+                    <div class="about_address">地址：北京市海淀区车道沟青东商务区C座5层</div>
                 </div>
-                <div class="content">
-                    <p class="row">010-87220477</p>
-                    <p class="row active">csc@cloudcore.cn</p>
-                    <p class="row">北京经济技术开发区荣华中路朝林广场B座708室</p>
+                <div class="col-md-6 col-sm-6 col-xs-12 ">
+                    <div id="container" class="about_map"></div>
+                </div>
+            </div>
+            <div class="row shenzhen">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="about_address">深圳研发中心</h2>
+                    <!--<div class="about_address">电话：123-123-456</div>-->
+                    <div class="about_address">邮箱：csc@cloudcore.cn</div>
+                    <div class="about_address">地址：深圳市罗湖区人民南路天安国际大厦B座1101室</div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div id="111" class="about_map"></div>
+                </div>
+            </div>
+            <div class="row wuhan ">
+                <div class="col-md-6 col-sm-6 col-xs-12 ">
+                    <h2 class="about_address">武汉研发中心</h2>
+                    <!--<div class="about_address">电话：123-123-456</div>-->
+                    <div class="about_address">邮箱：csc@cloudcore.cn</div>
+                    <div class="about_address">地址：武汉市高新区光谷世贸中心A座1903</div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div id="222" class="about_map"></div>
+                </div>
+            </div>
+            <div class="row ningbo">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="about_address">宁波分公司</h2>
+                    <!--<div class="about_address">电话：123-123-456</div>-->
+                    <div class="about_address">邮箱：csc@cloudcore.cn</div>
+                    <div class="about_address">地址：宁波市北仑区梅山盐场1号楼18号869室</div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div id="333" class="about_map"></div>
                 </div>
             </div>
         </div>
     </div>
-</footer>
-<!-- Footer End -->
+    <!-- Contact Section End -->
+</section>
+    <footer>
+        <div class="container">
+            <div class="row footer">
+                <div class="col-md-6 col-ms-6 col-xs-12">
+                    <p>CloudCore</p>
+                    <p>版权所有 © 北京云核网络技术有限公司 2014-2018 <span>京ICP备14027182号</span></p>
+                </div>
+                <div class="col-md-6 col-ms-6 col-xs-12">
+                    <div class="row contact">
+                        <div><i class="fa fa-phone"></i></div>
+                        <div class="active"><i class="fa fa-envelope"></i></div>
+                        <div><i class="fa fa-map-marker"></i></div>
+                    </div>
+                    <div class="content">
+                        <p class="row">010-87220477</p>
+                        <p class="row active">csc@cloudcore.cn</p>
+                        <p class="row">北京经济技术开发区荣华中路朝林广场B座708室</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
 
 
-<script src="../assets/js/jquery-2.1.3.min.js"></script>
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
-<script src="../assets/js/isotope.pkgd.min.js"></script>
-<script src="../assets/js/wow.min.js"></script>
-<script src="../assets/js/jquery.waypoints.min.js"></script>
-<script src="about.js"></script>
+    <script src="../assets/js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript"
+            src="http://webapi.amap.com/maps?v=1.3&key=484d0efef85f91a8ad03daf0c152bcec"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/jquery.waypoints.min.js"></script>
+    <script src="about.js"></script>
 
-<script>
-    function customWayPoint(className, addClassName, customOffset) {
-        var waypoints = $(className).waypoint({
-            handler: function(direction) {
-                if (direction == "down") {
-                    $(className).addClass(addClassName);
-                } else {
-                    $(className).removeClass(addClassName);
-                }
-            },
-            offset: customOffset
+    <script>
+        function customWayPoint(className, addClassName, customOffset) {
+            var waypoints = $(className).waypoint({
+                handler: function (direction) {
+                    if (direction == "down") {
+                        $(className).addClass(addClassName);
+                    } else {
+                        $(className).removeClass(addClassName);
+                    }
+                },
+                offset: customOffset
+            });
+        }
+
+        var defaultOffset = '50%';
+
+        for (i = 0; i < 17; i++) {
+            customWayPoint('.timeline__item--' + i, 'timeline__item-bg', defaultOffset);
+        }
+
+        var map = new AMap.Map('container', {
+            zoom: 15,
+            center: [116.303399, 39.945248]
         });
-    }
+        var mapshenzhen = new AMap.Map('111', {
+            zoom: 15,
+            center: [114.119543, 22.542055]
+        });
+        var mapwuhan = new AMap.Map('222', {
+            zoom: 15,
+            center: [114.420921, 30.472624]
+        });
+        var mapningbo = new AMap.Map('333', {
+            zoom: 15,
+            center: [122.008782, 29.781807]
+        });
 
-    var defaultOffset = '50%';
+        var marker = new AMap.Marker({
+            position: map.getCenter()
+        });
+        var markerShenzhen = new AMap.Marker({
+            position: mapshenzhen.getCenter()
+        });
+        var markerWuhan = new AMap.Marker({
+            position: mapwuhan.getCenter()
+        });
+        var markerNingbo = new AMap.Marker({
+            position: mapningbo.getCenter()
+        });
+        marker.setMap(map);
+        markerShenzhen.setMap(mapshenzhen);
+        markerWuhan.setMap(mapwuhan);
+        markerNingbo.setMap(mapningbo);
+        // 设置鼠标划过点标记显示的文字提示
+        //    marker.setTitle('我是marker的title');
 
-    for (i = 0; i < 17; i++) {
-        customWayPoint('.timeline__item--' + i, 'timeline__item-bg', defaultOffset);
-    }
-</script>
+        // 设置label标签
+        marker.setLabel({//label默认蓝框白底左上角显示，样式className为：amap-marker-label
+            offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+            content: "北京研发中心"
+        });
+        markerShenzhen.setLabel({//label默认蓝框白底左上角显示，样式className为：amap-marker-label
+            offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+            content: "深圳研发中心"
+        });
+        markerWuhan.setLabel({//label默认蓝框白底左上角显示，样式className为：amap-marker-label
+            offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+            content: "武汉研发中心"
+        });
+        markerNingbo.setLabel({//label默认蓝框白底左上角显示，样式className为：amap-marker-label
+            offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+            content: "宁波分公司"
+        });
+
+        $(document).ready(function () {
+            $('.beijing').show();
+            $('.shenzhen').hide();
+            $('.wuhan').hide();
+            $('.ningbo').hide();
+            $('#beijing').click(function () {
+                $('.beijing').show();
+                $('.shenzhen').hide();
+                $('.wuhan').hide();
+                $('.ningbo').hide();
+            });
+            $('#shenzhen').click(function () {
+                $('.beijing').hide();
+                $('.shenzhen').show();
+                $('.wuhan').hide();
+                $('.ningbo').hide();
+            });
+            $('#wuhan').click(function () {
+                $('.beijing').hide();
+                $('.shenzhen').hide();
+                $('.wuhan').show();
+                $('.ningbo').hide();
+            });
+            $('#ningbo').click(function () {
+                $('.beijing').hide();
+                $('.shenzhen').hide();
+                $('.wuhan').hide();
+                $('.ningbo').show();
+            });
+        })
+    </script>
 </body>
 </html>
