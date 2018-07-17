@@ -45,18 +45,18 @@ jQuery(document).ready(function() {
     wow.init();
 
     /* ---------- ISoptope --------- */
-    var $container = $('.portfolio-items');
+    var $container = $('#about_map');
 
     // filter items on button click
-    $container.isotope({
-        filter: '*',
-        itemSelector: '.item',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
+    // $container.isotope({
+    //     filter: '*',
+    //     itemSelector: '.item',
+    //     animationOptions: {
+    //         duration: 750,
+    //         easing: 'linear',
+    //         queue: false
+    //     }
+    // });
 
 
     $('#portfolio-filter ul li a').on('click',function(){
@@ -69,6 +69,7 @@ jQuery(document).ready(function() {
                 queue: false
             }
         });
+        $(this).addClass('selected').siblings().removeClass('selected');
         return false;
     });
 
